@@ -1,0 +1,36 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="P1.Intro.intro1"
+             Title="CSS Introduction"
+             NavigationPage.HasNavigationBar="False">
+
+    <ContentPage.Resources>
+        <ResourceDictionary>
+            <Style TargetType="Label">
+                <Setter Property="TextColor" Value="White"/>
+                <Setter Property="FontSize" Value="20"/>
+            </Style>
+        </ResourceDictionary>
+    </ContentPage.Resources>
+    
+    
+    <ScrollView>
+        <StackLayout Padding="10" BackgroundColor="#004445">
+            <Label Text="Computer System Servicing" FontSize="40" Margin="10" HorizontalTextAlignment="Center"/>
+            <Label Text="    This course is designed to develop knowledge, skills, and attitudes of a Computer Service Technician in accordance with industry standards. It covers basic and common competencies such as installing, maintaining, configuring, and diagnosing computer systems and networks."/>
+            <Label Text=" "/>
+            <Label Text="    This course is designed to develop &amp; enhance the knowledge, skills, &amp; attitudes of a Computer Systems Service Technician, in accordance with industry standards. It covers the basic and common competencies in addition to the core competencies such as to install and configure computers systems, set-up computer networks and servers and to maintain and repair computer systems and networks."/>
+
+
+            <Label Text="Let's Get Started!" FontSize="30" TextColor="Yellow" HorizontalOptions="End" Margin="8">
+                <Label.GestureRecognizers>
+                    <TapGestureRecognizer Tapped="TapGame" Command="{Binding UnlocksCommand}"/>
+                </Label.GestureRecognizers>
+            </Label>
+
+        </StackLayout>
+    </ScrollView>
+    
+    
+</ContentPage>

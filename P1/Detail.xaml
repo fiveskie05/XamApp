@@ -1,0 +1,116 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="P1.Detail"
+             Title="CssDroid"
+             BackgroundColor="#fcfdfe">
+    <ScrollView>
+        
+        <Grid Margin="5" ColumnSpacing="5" RowSpacing="5" HeightRequest="10" >
+
+
+                <Frame BorderColor="LightGray" Grid.Row="0" Grid.Column="0" CornerRadius="5" Padding="2"> <!--Intro-->
+                    
+                    <Grid RowSpacing="0" ColumnSpacing="0">
+
+                        <Frame  Grid.Row="0" Grid.Column="0" Grid.RowSpan="2" Grid.ColumnSpan="2">
+                            <Frame.GestureRecognizers>
+                                <TapGestureRecognizer Tapped="Intro_Tap"/>
+                            </Frame.GestureRecognizers>
+                            <Image Source="cpu.png" Aspect="AspectFit"/>
+                        </Frame>
+                        <Frame Grid.Row="2" Grid.Column="0" Grid.ColumnSpan="2" Margin="0" Padding="0" BackgroundColor="#ffb745">
+                            <Frame.GestureRecognizers>
+                                <TapGestureRecognizer Tapped="Intro_Tap"/>
+                            </Frame.GestureRecognizers>
+                            <Label Text="Introduction to CSS Training" FontAttributes="Bold" FontFamily="courier" FontSize="20" HorizontalTextAlignment="Center" VerticalTextAlignment="Center" TextColor="#ffffff"/>
+                        </Frame>
+                    </Grid>
+                </Frame>
+
+
+                <Frame BorderColor="LightGray" Grid.Row="0" Grid.Column="1" CornerRadius="5" Padding="2">  <!--COC1-->
+                   
+                    <Grid RowSpacing="0" ColumnSpacing="0">
+
+                        <Frame  Grid.Row="0" Grid.Column="0" Grid.RowSpan="2" Grid.ColumnSpan="2">
+                            <Frame.GestureRecognizers>
+                                <TapGestureRecognizer Tapped="C1_Tap"/>
+                            </Frame.GestureRecognizers>
+                            <Image Source="hdrive.png" Aspect="AspectFit"/>
+                        </Frame>
+                        <Frame Grid.Row="2" Grid.Column="0" Grid.ColumnSpan="2" Margin="0" Padding="0" BackgroundColor="#344d90">
+                            <Frame.GestureRecognizers>
+                                <TapGestureRecognizer Tapped="C1_Tap"/>
+                            </Frame.GestureRecognizers>
+                            <Label Text="COC 1" FontAttributes="Bold" FontFamily="courier" FontSize="20" HorizontalTextAlignment="Center" VerticalTextAlignment="Center" TextColor="#ffffff"/>
+                        </Frame>
+                    </Grid>
+                </Frame>
+                
+                <!--<Frame x:Name="coc1Lock" Grid.Row="0" Grid.Column="1" Padding="2" BackgroundColor="Gray" Opacity="0.95"> --><!--COC1 Lock--><!--
+                    <Image Source="lock0" HorizontalOptions="CenterAndExpand" Aspect="AspectFit"/>
+                <Frame.GestureRecognizers>
+                    <TapGestureRecognizer Tapped="Lock_Tap"/>
+                </Frame.GestureRecognizers>
+                </Frame>-->
+                
+
+                <Frame BorderColor="LightGray" Grid.Row="1" Grid.Column="0" CornerRadius="5" Padding="2"> <!--COC2-->
+                    
+                    <Grid RowSpacing="0" ColumnSpacing="0">
+
+                        <Frame  Grid.Row="0" Grid.Column="0" Grid.RowSpan="2" Grid.ColumnSpan="2">
+                            <Frame.GestureRecognizers>
+                                <TapGestureRecognizer Tapped="C2_Tap"/>
+                            </Frame.GestureRecognizers>
+                            <Image Source="pendrive.png" Aspect="AspectFit"/>
+                        </Frame>
+                        <Frame Grid.Row="2" Grid.Column="0" Grid.ColumnSpan="2" Margin="0" Padding="0" BackgroundColor="#5cc5ef">
+                            <Frame.GestureRecognizers>
+                                <TapGestureRecognizer Tapped="C2_Tap"/>
+                            </Frame.GestureRecognizers>
+                            <Label Text="COC 2" FontAttributes="Bold" FontFamily="courier" FontSize="20" HorizontalTextAlignment="Center" VerticalTextAlignment="Center" TextColor="#ffffff"/>
+                        </Frame>
+                    </Grid>
+                </Frame>
+
+                <!--<Frame x:Name="coc2Lock" Grid.Row="1" Grid.Column="0" Padding="2" BackgroundColor="Gray" Opacity="0.95"> --><!--COC2 Lock--><!--
+                    <Image Source="lock0" HorizontalOptions="CenterAndExpand" Aspect="AspectFit"/>
+                <Frame.GestureRecognizers>
+                    <TapGestureRecognizer Tapped="Lock_Tap"/>
+                </Frame.GestureRecognizers>
+                </Frame>-->
+                
+                
+                <Frame BorderColor="LightGray" Grid.Row="1" Grid.Column="1" CornerRadius="5" Padding="2"> <!--COC3-->
+                    
+                    <Grid RowSpacing="0" ColumnSpacing="0">
+
+                        <Frame  Grid.Row="0" Grid.Column="0" Grid.RowSpan="2" Grid.ColumnSpan="2">
+                            <Frame.GestureRecognizers>
+                                <TapGestureRecognizer Tapped="C3_Tap"/>
+                            </Frame.GestureRecognizers>
+                            <Image Source="server.png" Aspect="AspectFit"/>
+                        </Frame>
+                        <Frame Grid.Row="2" Grid.Column="0" Grid.ColumnSpan="2" Margin="0" Padding="0" BackgroundColor="#e7552c">
+                            <Frame.GestureRecognizers>
+                                <TapGestureRecognizer Tapped="C3_Tap"/>
+                            </Frame.GestureRecognizers>
+                            <Label Text="COC 3" FontAttributes="Bold" FontFamily="courier" FontSize="20" HorizontalTextAlignment="Center" VerticalTextAlignment="Center" TextColor="#ffffff"/>
+                        </Frame>
+                    </Grid>
+                </Frame>
+                
+                <!--<Frame x:Name="coc3Lock" Grid.Row="1" Grid.Column="1" Padding="2" BackgroundColor="Gray" Opacity="0.95"> --><!--COC3 Lock--><!--
+                    <Image Source="lock0" HorizontalOptions="CenterAndExpand" Aspect="AspectFit"/>
+                <Frame.GestureRecognizers>
+                    <TapGestureRecognizer Tapped="Lock_Tap"/>
+                </Frame.GestureRecognizers>
+                </Frame>-->
+
+
+
+            </Grid>
+        </ScrollView>
+</ContentPage>

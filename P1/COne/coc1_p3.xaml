@@ -1,0 +1,75 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="P1.COne.coc1_p3"
+             Title="Hardware Components">
+
+    <ContentPage.Resources>
+        <ResourceDictionary>
+
+            <Style x:Key="detail" TargetType="Label">
+                <Setter Property="Margin" Value="10"/>
+                <Setter Property="FontSize" Value="16"/>
+            </Style>
+
+            <Style x:Key="NextButton" TargetType="Button">
+                <Setter Property="BackgroundColor" Value="#eb5e30"/>
+                <Setter Property="TextColor" Value="#ffffff"/>
+                <Setter Property="Text" Value="Next"/>
+                <Setter Property="FontSize" Value="20"/>
+                <Setter Property="BorderRadius" Value="15"/>
+                <Setter Property="WidthRequest" Value="90"/>
+                <Setter Property="HeightRequest" Value="40"/>
+                <Setter Property="Margin" Value="5"/>
+                <Setter Property="FontSize" Value="15"/>
+                <Setter Property="HorizontalOptions" Value="End"/>
+            </Style>
+
+            <Style x:Key="BackButton" TargetType="Button">
+                <Setter Property="BackgroundColor" Value="#756867"/>
+                <Setter Property="TextColor" Value="#efefef"/>
+                <Setter Property="Text" Value="Back"/>
+                <Setter Property="BorderRadius" Value="15"/>
+                <Setter Property="WidthRequest" Value="80"/>
+                <Setter Property="HeightRequest" Value="30"/>
+                <Setter Property="Margin" Value="5"/>
+                <Setter Property="FontSize" Value="15"/>
+                <Setter Property="HorizontalOptions" Value="Start"/>
+            </Style>
+        </ResourceDictionary>
+    </ContentPage.Resources>
+
+
+    <ScrollView>
+
+        <StackLayout Padding="10">
+            <Frame HorizontalOptions="Center">
+                <Image Source="joker" Aspect="AspectFit"/>
+            </Frame>
+            <StackLayout>
+                <Label Text="Video Card" HorizontalTextAlignment="Center" FontAttributes="Bold" FontSize="30" BackgroundColor="#F8EFBA"/>
+            </StackLayout>
+            <StackLayout BackgroundColor="#F8EFBA">
+                <Label Style="{StaticResource detail}"  FormattedText="    The relationship between ListView and TableView is potentially confusing because both involve the use of cells, which are derivatives of the Cell class. Cell derives from Element but not VisualElement. A cell is not a visual element itself, but instead provides a description of a visual element. These cells are used by ListView and TableView in two different ways: ListView generally displays a list of objects of the same type, the display of which is specified by a single cell. A TableView is a collection of multiple cells, each of which displays an individual item in a collection of related items. 
+If you like to equate Xamarin.Forms views with C# and .NET The relationship between ListView and TableView is potentially confusing because both involve the use of cells, which are derivatives of the Cell class. Cell derives from Element but not VisualElement. A cell is not a visual element itself, but instead provides a description of a visual element. These cells are used by ListView and TableView in two different ways: ListView generally displays a list of objects of the same type, the display of which is specified by a single cell. A TableView is a collection of multiple cells, each of which displays an individual item in a collection of related items. 
+If you like to equate Xamarin.Forms views with C# and .NET "/>
+            </StackLayout>
+
+            <Grid>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="85"/>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="85"/>
+                </Grid.ColumnDefinitions>
+
+                <Button Grid.Column="0" Style="{StaticResource BackButton}" Clicked="Backbutton"/>
+                <Button Grid.Column="2" Style="{StaticResource NextButton}" Clicked="Button_Clicked"/>
+
+            </Grid>
+
+        </StackLayout>
+
+    </ScrollView>
+
+
+</ContentPage>

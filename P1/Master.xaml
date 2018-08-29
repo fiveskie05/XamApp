@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="P1.Master"
+             Title="Master"
+             Icon="menu.png">
+    <ContentPage.Content>
+        <StackLayout>
+            <Image Source="deadpul.png" Aspect="AspectFill"/>
+            <TableView Margin="10">
+                <TableSection>
+                    <ImageCell ImageSource="lightbulb" Text="Education"/>
+                </TableSection>
+            </TableView>
+            
+            <Button Text="Settings" x:Name="btnSettings"/>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

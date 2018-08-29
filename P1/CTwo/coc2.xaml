@@ -1,0 +1,116 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="P1.CTwo.coc2"
+             Title="Windows OS">
+
+
+    <!--<ContentPage.Resources>
+        <ResourceDictionary>
+            <Style TargetType="Grid">
+                <Setter Property="Padding" Value="0, 15, 0 , 5"/>
+            </Style>
+        </ResourceDictionary>
+    </ContentPage.Resources>-->
+
+
+    <StackLayout Padding="10, 20, 10, 0">
+
+        <TableView>
+            <TableSection>
+                <ViewCell>
+
+                    <Grid ColumnSpacing="5">
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="40"/>
+                            <ColumnDefinition Width="*"/>
+                            <ColumnDefinition Width="40"/>
+                        </Grid.ColumnDefinitions>
+                        <Image Source="lightbulb.png" Grid.Column="0">
+                            <Image.GestureRecognizers>
+                                <TapGestureRecognizer Tapped="Coc2_Tap1"/>
+                            </Image.GestureRecognizers>
+                        </Image>
+                        <Label Text="Mga Parts ng System Unit" Grid.Column="1" VerticalTextAlignment="Center" FontSize="16">
+                            <Label.GestureRecognizers>
+                                <TapGestureRecognizer Tapped="Coc2_Tap1"/>
+                            </Label.GestureRecognizers>
+                        </Label>
+                        <Image Source="tsek.png" Grid.Column="2">
+                            <Image.GestureRecognizers>
+                                <TapGestureRecognizer Tapped="Coc2_Tap1"/>
+                            </Image.GestureRecognizers>
+                        </Image>
+
+                    </Grid>
+
+                </ViewCell>
+                <ViewCell>
+
+                    <Grid ColumnSpacing="5">
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="40"/>
+                            <ColumnDefinition Width="*"/>
+                            <ColumnDefinition Width="40"/>
+                        </Grid.ColumnDefinitions>
+                        <Image Source="lightbulb.png" Grid.Column="0">
+                            <Image.GestureRecognizers>
+                                <TapGestureRecognizer Tapped="Coc2_Tap2"/>
+                            </Image.GestureRecognizers>
+                        </Image>
+                        <Label Text="Mga Parts ng System Unit" Grid.Column="1" VerticalTextAlignment="Center" FontSize="16">
+                            <Label.GestureRecognizers>
+                                <TapGestureRecognizer Tapped="Coc2_Tap2"/>
+                            </Label.GestureRecognizers>
+                        </Label>
+                        <Image Source="eks.png" Grid.Column="2">
+                            <Image.GestureRecognizers>
+                                <TapGestureRecognizer Tapped="Coc2_Tap2"/>
+                            </Image.GestureRecognizers>
+                        </Image>
+
+                        <StackLayout Orientation="Horizontal" Grid.Column="0" Grid.ColumnSpan="3" BackgroundColor="Gray" Opacity="0.95">
+                            <Image Source="lock" HorizontalOptions="CenterAndExpand" Aspect="AspectFit" Opacity="1"/>
+                        </StackLayout>
+
+                    </Grid>
+
+                </ViewCell>
+                <ViewCell>
+
+                    <Grid ColumnSpacing="5">
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="40"/>
+                            <ColumnDefinition Width="*"/>
+                            <ColumnDefinition Width="40"/>
+                        </Grid.ColumnDefinitions>
+                        <Image Source="lightbulb.png" Grid.Column="0">
+                            <Image.GestureRecognizers>
+                                <TapGestureRecognizer Tapped="Coc2_Tap3"/>
+                            </Image.GestureRecognizers>
+                        </Image>
+                        <Label Text="Mga Parts ng System Unit" Grid.Column="1" VerticalTextAlignment="Center" FontSize="16">
+                            <Label.GestureRecognizers>
+                                <TapGestureRecognizer Tapped="Coc2_Tap3"/>
+                            </Label.GestureRecognizers>
+                        </Label>
+                        <Image Source="eks.png" Grid.Column="2">
+                            <Image.GestureRecognizers>
+                                <TapGestureRecognizer Tapped="Coc2_Tap3"/>
+                            </Image.GestureRecognizers>
+                        </Image>
+
+                        <StackLayout Orientation="Horizontal" Grid.Column="0" Grid.ColumnSpan="3" BackgroundColor="Gray" Opacity="0.95">
+                            <Image Source="lock" HorizontalOptions="CenterAndExpand" Aspect="AspectFit" Opacity="1"/>
+                        </StackLayout>
+
+                    </Grid>
+
+                </ViewCell>
+            </TableSection>
+        </TableView>
+
+    </StackLayout>
+
+
+</ContentPage>
